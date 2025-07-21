@@ -1,0 +1,65 @@
+/* common */
+/* fonts */
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+* img{
+    display: block;
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.primary-btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #DD0000;
+    color: white;
+    padding: 7px 22px;
+    font-weight: 100;
+    display: flex;
+    gap: 10px;
+
+}
+
+/* banner */
+
+.banner{
+    background-color: #161616;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 40px 0px 40px;
+    align-items: center;
+}
+.banner-title{
+    font-size: calc(40rem / 16);
+    font-weight: 600;
+    line-height: 50px;
+}
+.banner-description{
+    margin: 20px 0px;
+    max-width: 75%;
+    font-size: small;
+    font-weight: 200;
+}
