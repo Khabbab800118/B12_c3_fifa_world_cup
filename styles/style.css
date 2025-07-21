@@ -2,35 +2,35 @@
 /* fonts */
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1280px;
     margin: auto;
 }
 
-* img{
+* img {
     display: block;
     max-width: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.primary-btn{
+.primary-btn {
     border: none;
     border-radius: 10px;
     background-color: #DD0000;
@@ -44,7 +44,7 @@
 
 /* banner */
 
-.banner{
+.banner {
     background-color: #161616;
     border-radius: 10px;
     color: white;
@@ -52,14 +52,88 @@
     padding: 10px 40px 0px 40px;
     align-items: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: calc(40rem / 16);
     font-weight: 600;
     line-height: 50px;
 }
-.banner-description{
+
+.banner-description {
     margin: 20px 0px;
     max-width: 75%;
     font-size: small;
     font-weight: 200;
+}
+
+/* ..............body.......... */
+
+
+/* body right */
+.body-left {
+    max-width: 25%;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.body {
+    margin-top: 30px;
+}
+
+.body-left button:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.body-left button:nth-child(2) {
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+}
+
+.body-left button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* body right */
+.body-right {
+    flex: 1;
+}
+.brick-black{
+    max-height: calc(56.1rem / 16);
+    max-width: calc(92.82rem /16);
+    background-color: rgba(0, 0, 0, 1);
+}
+.brick-red{
+    max-height: calc(56.1rem / 16);
+    max-width: calc(92.82rem /16);
+    background-color: rgba(204, 34, 41, 1);
+    color: rgba(204, 34, 41, 1);
+}
+.brick-yellow{
+    max-height: calc(56.1rem / 16);
+    max-width: calc(92.82rem /16);
+    background-color: rgba(242, 202, 48, 1);
+    color: rgba(242, 202, 48, 1);
+}
+.brick-blue{
+    max-width: calc(56.1rem / 16);
+    max-height: calc(92.82rem /16);
+    background-color: rgba(51, 64, 148, 1);
+    color: rgba(51, 64, 148, 1);
+}
+.brick-maron{
+    max-width: calc(56.1rem / 16);
+    max-height: calc(92.82rem /16);
+    background-color: rgba(214, 30, 52, 1);
+    color: rgba(214, 30, 52, 1);
+}
+.brick-white{
+    max-width: calc(56.1rem / 16);
+    max-height: calc(92.82rem /16);
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(244, 244, 244, 1);
 }
