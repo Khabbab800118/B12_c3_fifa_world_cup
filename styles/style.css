@@ -50,7 +50,39 @@
     gap: 10px;
 
 }
-
+@keyframes banner-animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    25%{
+        opacity: 0.25;
+        transform: translate(-15px);
+    }
+    50%{
+        opacity: 0.5;
+        color: yellow;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes banner-player-animation {
+    0%{
+        opacity: 0.5;
+        transform: translate(-20px);
+    }
+    50%{
+        opacity: 0.7;
+        transform: translate(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 /* banner */
 
@@ -61,6 +93,7 @@
     margin-top: 20px;
     padding: 10px 40px 0px 40px;
     align-items: center;
+    animation: banner-animation 2s ease-out forwards;
 }
 
 .banner-title {
@@ -74,6 +107,10 @@
     max-width: 75%;
     font-size: small;
     font-weight: 200;
+}
+
+.banner-right div img{
+    animation: banner-player-animation 1s ease-in infinity;
 }
 
 /* ..............body.......... */
