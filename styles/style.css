@@ -67,19 +67,21 @@
 }
 
 /* ..............body.......... */
+.body {
+    margin: calc(30rem / 16) auto calc(80rem / 16) auto;
+    gap: 1.5rem;
+}
 
 
-/* body right */
+/* body left */
 .body-left {
+    max-height: fit-content;
     max-width: 25%;
     background-color: #161616;
     padding: 20px;
     border-radius: 10px;
 }
 
-.body {
-    margin-top: 30px;
-}
 
 .body-left button:nth-child(1) {
     background-color: white;
@@ -101,39 +103,38 @@
 /* body right */
 .body-right {
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
-.brick-black{
-    max-height: calc(56.1rem / 16);
-    max-width: calc(92.82rem /16);
-    background-color: rgba(0, 0, 0, 1);
+
+.card{
+    border: 1px solid rgba(232, 232, 232, 1);
+    border-radius: 10px;
+    max-width: calc(340rem / 16);
+    display: grid;
+    place-items: center;
+    padding: 2.5rem;
 }
-.brick-red{
-    max-height: calc(56.1rem / 16);
-    max-width: calc(92.82rem /16);
-    background-color: rgba(204, 34, 41, 1);
-    color: rgba(204, 34, 41, 1);
+.country-flags{
+    gap: 20px;
+    align-items: center;
 }
-.brick-yellow{
-    max-height: calc(56.1rem / 16);
-    max-width: calc(92.82rem /16);
-    background-color: rgba(242, 202, 48, 1);
-    color: rgba(242, 202, 48, 1);
+.grm-flag,
+.frn-flag{
+    max-width: calc(92.82rem  / 16);
 }
-.brick-blue{
-    max-width: calc(56.1rem / 16);
-    max-height: calc(92.82rem /16);
-    background-color: rgba(51, 64, 148, 1);
-    color: rgba(51, 64, 148, 1);
+.vs{
+    font-weight: 700;
 }
-.brick-maron{
-    max-width: calc(56.1rem / 16);
-    max-height: calc(92.82rem /16);
-    background-color: rgba(214, 30, 52, 1);
-    color: rgba(214, 30, 52, 1);
+
+.country-name{
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 20px 0px 10px 0px;
 }
-.brick-white{
-    max-width: calc(56.1rem / 16);
-    max-height: calc(92.82rem /16);
-    background-color: rgba(244, 244, 244, 1);
-    color: rgba(244, 244, 244, 1);
+
+.time-date{
+    font-size: 0.75rem;
+    color: #4d4d4d;
 }
