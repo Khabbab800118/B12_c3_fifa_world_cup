@@ -22,12 +22,21 @@
     max-width: 100%;
 }
 
+* a, ul{
+    list-style: none;
+    text-decoration: none;
+}
+
 .flex {
     display: flex;
 }
 
 .column {
     flex-direction: column;
+}
+
+.primary-btn:hover {
+    pointer-events: visibleFill;
 }
 
 .primary-btn {
@@ -41,6 +50,7 @@
     gap: 10px;
 
 }
+
 
 /* banner */
 
@@ -107,7 +117,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
-
+/* ............card............ */
 .card{
     border: 1px solid rgba(232, 232, 232, 1);
     border-radius: 10px;
@@ -137,4 +147,29 @@
 .time-date{
     font-size: 0.75rem;
     color: #4d4d4d;
+}
+
+/* .........footer.......... */
+
+footer{
+    background-color: #161616;
+    height: calc(296rem / 16);
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.footer-title{
+    font-weight: 500;
+    font-size: calc(40rem / 16);
+    color: white;
+}
+.footer-navbar-ul{
+    gap: 70px;
+    margin-top: 40px;
+}
+.footer-navbar-ul li a:hover{
+    color: #DD0000;
+}
+.footer-navbar-ul li a{
+    color: #B9B9B9;
 }
